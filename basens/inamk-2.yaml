@@ -6,8 +6,8 @@ metadata:
     run: inamk-2
   name: inamk-2
   namespace: example
-  # annotations:
-    # config.kubernetes.io/depends-on: /namespaces/example/Pod/inamk-1
+  annotations:
+    config.kubernetes.io/depends-on: core/namespaces/example/Pod/inamk-1
 spec:
   containers:
   - image: nginx
