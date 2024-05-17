@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: inamk-2
-  name: inamk-2
+    run: inamk-4
+  name: inamk-4
   namespace: example
   annotations:
-    config.kubernetes.io/depends-on: /namespaces/example/Pod/inamk-1
+    config.kubernetes.io/depends-on: /namespaces/example/Pod/inamk-3
     # config.kubernetes.io/depends-on: apps/namespaces/default/StatefulSet/wordpress-mysql
 spec:
   containers:
