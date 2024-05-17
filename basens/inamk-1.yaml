@@ -7,6 +7,10 @@ metadata:
   name: inamk-1
   namespace: example
 spec:
+  initContainers:
+  - name: wait
+    image: busybox
+    command: ['sh', '-c', 'sleep 5']
   containers:
   - image: nginx
     name: inamk-1
