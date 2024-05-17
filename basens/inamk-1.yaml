@@ -12,8 +12,9 @@ spec:
     image: busybox
     command: ['sh', '-c', 'sleep 5']
   containers:
-  - image: nginx:1.26.0-perl
-    name: inamk-1
+  - image: nginx
+  # - image: nginx:1.26.0-perl
+    name: inamk-
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
