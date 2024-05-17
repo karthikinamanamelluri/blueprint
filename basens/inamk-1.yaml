@@ -12,7 +12,7 @@ spec:
     image: busybox
     command: ['sh', '-c', 'sleep 5']
   containers:
-  - image: nginx
+  - image: nginx:1.26.0-perl
     name: inamk-3
     resources: {}
   dnsPolicy: ClusterFirst
