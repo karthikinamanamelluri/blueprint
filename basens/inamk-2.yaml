@@ -12,7 +12,7 @@ metadata:
 spec:
   containers:
   - image: nginx:1.26.0-perl
-    name: inamk-4
+    name: inamk-2
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
