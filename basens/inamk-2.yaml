@@ -1,19 +1,19 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  creationTimestamp: null
-  labels:
-    run: inamk-4
-  name: inamk-4
-  namespace: example
-  annotations:
-    config.kubernetes.io/depends-on: /namespaces/example/Pod/inamk-3
-    # config.kubernetes.io/depends-on: apps/namespaces/default/StatefulSet/wordpress-mysql
-spec:
-  containers:
-  - image: nginx
-    name: inamk-2
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   creationTimestamp: null
+#   labels:
+#     run: inamk-4
+#   name: inamk-4
+#   namespace: example
+#   annotations:
+#     config.kubernetes.io/depends-on: /namespaces/example/Pod/inamk-3
+#     # config.kubernetes.io/depends-on: apps/namespaces/default/StatefulSet/wordpress-mysql
+# spec:
+#   containers:
+#   - image: nginx
+#     name: inamk-2
+#     resources: {}
+#   dnsPolicy: ClusterFirst
+#   restartPolicy: Always
+# status: {}
